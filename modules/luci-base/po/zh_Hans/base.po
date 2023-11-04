@@ -290,6 +290,38 @@ msgstr "已存在同名的目录。"
 msgid "A new login is required since the authentication session expired."
 msgstr "由于身份验证会话已过期，需要重新登录。"
 
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:437
+msgid ""
+"Drag or paste a valid <em>*.conf</em> file below to configure the local "
+"WireGuard interface."
+msgstr "将有效 <em>*.conf</em> 文件拖动或粘贴到下方以配置本地 WireGuard 接口。"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:445
+msgid "Paste or drag supplied WireGuard configuration file…"
+msgstr "粘贴或拖动提供的 WireGuard 配置文件…"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:446
+msgid "Paste or drag WireGuard peer configuration (wg0.conf) file…"
+msgstr "粘贴或拖动 WireGuard peer 配置 (wg0.conf) 文件…"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:439
+msgid ""
+"Paste or drag a WireGuard configuration (commonly <em>wg0.conf</em>) from "
+"another system below to create a matching peer entry allowing that system to "
+"connect to the local WireGuard interface."
+msgstr ""
+"将来自另一个系统的 WireGuard 配置（通常是 <em>wg0.conf</em>）粘贴或拖动到下方"
+"创建一个匹配的 peer 条目，其允许该系统连接到本地 WireGuard 接口。"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:440
+msgid ""
+"To fully configure the local WireGuard interface from an existing (e.g. "
+"provider supplied) configuration file, use the <strong><a class=\"full-"
+"import\" href=\"#\">configuration import</a></strong> instead."
+msgstr ""
+"要从现有（例如供应商提供的）配置文件完全配置本地 WireGuard 接口，请使用"
+"<strong><a class=\"full-import\" href=\"#\">配置导入</a></strong>。"
+
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:167
 msgid ""
 "A random, on the fly generated \"PrivateKey\", the key will not be saved on "
@@ -1017,6 +1049,10 @@ msgstr "带宽"
 #: modules/luci-mod-network/htdocs/luci-static/resources/tools/network.js:377
 msgid "Base device"
 msgstr "基设备"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:158
+msgid "Base64-encoded public key of this interface for sharing."
+msgstr "此接口用于共享的 Base64 编码的公钥。"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:974
 msgid "Beacon Interval"
@@ -2127,6 +2163,22 @@ msgid ""
 "reload the page."
 msgstr "编辑上方的原始配置数据来修复错误，点击“保存”按钮以重新载入此页面。"
 
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:226
+msgid "Edit peer"
+msgstr "编辑对端"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:515
+msgid "Peer disabled"
+msgstr "已禁用对端"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:515
+msgid "Enable / Disable peer. Restart wireguard interface to apply changes."
+msgstr "启用/禁用对端。重启 Wireguard 端口应用更改。"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:587
+msgid "Required. Public key of the WireGuard peer."
+msgstr "必需，WireGuard 对端的公钥。"
+
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:900
 msgid "Edit this network"
 msgstr "编辑此网络"
@@ -2826,9 +2878,74 @@ msgstr "生成配置"
 msgid "Generate Key"
 msgstr "生成密钥"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:202
-msgid "Generate New QR-Code"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:109
+msgid "Generate new key pair"
+msgstr "生成新的密钥对"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:623
+msgid "Generate preshared key"
+msgstr "生成预共享密钥"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:693
+msgid "Generates a configuration suitable for import on a WireGuard peer"
+msgstr "生成适合在 WireGuard 对端上导入的配置"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:795
+msgid "Generating QR code…"
+msgstr "正在生成二维码…"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:693
+msgid "Generates a configuration suitable for import on a WireGuard peer"
+msgstr "生成适合在 WireGuard 对端上导入的配置"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:861
+msgid "Generate configuration…"
+msgstr "生成配置…"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:754
+msgid ""
+"The generated configuration can be imported into a WireGuard client "
+"application to setup a connection towards this device."
+msgstr "生成的配置可以导入到 WireGuard 客户端应用中来设置到该设备的连接。"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:773
+msgid "Connection endpoint"
+msgstr "连接端点"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:773
+msgid ""
+"The public hostname or IP address of this system the peer should connect to. "
+"This usually is a static public IP address, a static hostname or a DDNS "
+"domain."
 msgstr ""
+"对端应连接到的此系统的公共主机名或 IP 地址。 通常是静态公共 IP 地址、静态主机"
+"名或 DDNS 域。"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:778
+msgid ""
+"IP addresses that are allowed inside the tunnel. The peer will accept "
+"tunnelled packets with source IP addresses matching this list and route back "
+"packets with matching destination IP."
+msgstr ""
+"隧道内允许的 IP 地址。对端接受源 IP 地址匹配此列表的隧道报文，并将目的地 IP "
+"匹配该列表的数据包路由回去。"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:843
+msgid ""
+"No fixed interface listening port defined, peers might not be able to "
+"initiate connections to this WireGuard instance!"
+msgstr ""
+"没有定义固定的接口监听端口，对端可能无法发起到此 WireGuard 实例的连接！"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:836
+msgid "Back to peer configuration"
+msgstr "返回 peer 配置"
+
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:692
+msgid "Configuration Export"
+msgstr "配置文件导出"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1533
 msgid "Generate PMK locally"
@@ -2837,10 +2954,6 @@ msgstr "本地生成 PMK"
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:396
 msgid "Generate archive"
 msgstr "生成备份"
-
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:217
-msgid "Generate new QR-Code"
-msgstr ""
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:79
 msgid "Given password confirmation did not match, password not changed!"
@@ -3393,6 +3506,45 @@ msgstr "镜像"
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:273
 msgid "Image check failed:"
 msgstr "镜像检查失败了："
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:478
+msgid "Import as peer"
+msgstr "导入为对端"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:188
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:478
+msgid "Import configuration"
+msgstr "导入配置文件"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:506
+msgid "Import configuration as peer…"
+msgstr "将配置导入为对端…"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:492
+msgid "Import settings"
+msgstr "导入设置"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:378
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:405
+msgid "Imported peer configuration"
+msgstr "导入对端配置"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:188
+msgid "Imports settings from an existing WireGuard configuration file"
+msgstr "从现有的 WireGuard 配置文件导入设置"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:189
+msgid "Load configuration…"
+msgstr "加载配置…"
+
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1187
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2067
+msgid "Loading data…"
+msgstr "加载数据中…"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:534
+msgid "Untitled peer"
+msgstr "无标题的对端"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/iptables.js:68
 msgid "In"
@@ -5016,7 +5168,7 @@ msgid ""
 "the tunnel. Usually the peer's tunnel IP addresses and the networks the peer "
 "routes through the tunnel."
 msgstr ""
-"可选。此对端在隧道内被允许使用的 IP 地址和前缀。通常是对端的隧道 IP 地址和对"
+"可选，此对端在隧道内被允许使用的 IP 地址和前缀。通常是对端的隧道 IP 地址和对"
 "端经由隧道的网络。"
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:117
@@ -5026,6 +5178,16 @@ msgstr "可选，隧道接口的最大传输单元。"
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:246
 msgid "Optional. Port of peer."
 msgstr "可选，对端的端口。"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:592
+msgid ""
+"Optional. Private key of the WireGuard peer. The key is not required for "
+"establishing a connection but allows generating a peer configuration or QR "
+"code if available. It can be removed after the configuration has been "
+"exported."
+msgstr ""
+"可选，WireGuard 对端的私钥。该密钥不是建立连接所必需的，但允许生成对端配置"
+"或二维码（如果可用）；导出配置后可以将其删除。"
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:250
 msgid ""
@@ -5485,6 +5647,14 @@ msgstr "分发前缀"
 msgid "Preshared Key"
 msgstr "预共享密钥"
 
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:572
+msgid "Preshared key in use"
+msgstr "预共享密钥使用中"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:308
+msgid "PresharedKey setting is invalid"
+msgstr "PresharedKey 设置无效"
+
 #: protocols/luci-proto-3g/htdocs/luci-static/resources/protocol/3g.js:130
 #: protocols/luci-proto-ppp/htdocs/luci-static/resources/protocol/ppp.js:102
 #: protocols/luci-proto-ppp/htdocs/luci-static/resources/protocol/pppoa.js:88
@@ -5538,6 +5708,14 @@ msgstr "私有（阻止 MAC VLAN 间通信）"
 msgid "Private Key"
 msgstr "私钥"
 
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:566
+msgid "Private key present"
+msgstr "存在私钥"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:296
+msgid "PrivateKey setting is missing or invalid"
+msgstr "PrivateKey 设置丢失或无效"
+
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/processes.js:64
 #: modules/luci-mod-status/root/usr/share/luci/menu.d/luci-mod-status.json:63
 msgid "Processes"
@@ -5585,6 +5763,19 @@ msgstr "伪装 Ad-Hoc（ahdemo）"
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:227
 msgid "Public Key"
 msgstr "公钥"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:549
+msgid "Public key is missing"
+msgstr "缺少公钥"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:558
+msgctxt "Tooltip displaying full WireGuard peer public key"
+msgid "Public key: %h"
+msgstr "公钥：%h"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:305
+msgid "PublicKey setting is invalid"
+msgstr "公钥设置无效"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/sshkeys.js:284
 msgid ""
@@ -8789,6 +8980,10 @@ msgstr "是"
 #: modules/luci-compat/luasrc/view/cbi/delegator.htm:20
 msgid "« Back"
 msgstr "« 后退"
+
+#: modules/luci-base/htdocs/luci-static/resources/form.js:3255
+msgid "Back"
+msgstr "返回"
 
 #~ msgid "Enable promiscious mode"
 #~ msgstr "启用混杂模式"

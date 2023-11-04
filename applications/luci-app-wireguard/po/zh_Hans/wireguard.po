@@ -1,117 +1,98 @@
+#
+# Yangfl <mmyangfl@gmail.com>, 2018-2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2021-11-27 23:39+0000\n"
+"Last-Translator: Eric <spice2wolf@gmail.com>\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"openwrt/luciapplicationswireguard/zh_Hans/>\n"
+"Language: zh_Hans\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.10-dev\n"
 
-"X-Generator: Weblate 4.8-dev\n"
+#: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:25
+msgid "%dh ago"
+msgstr "%d小时前"
 
-#: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:110
+#: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:23
+msgid "%dm ago"
+msgstr "%d分钟前"
+
+#: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:21
+msgid "%ds ago"
+msgstr "%d秒前"
+
+#: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:117
 msgid "Allowed IPs"
-msgstr "允許的 IP群"
+msgstr "允许的 IP"
 
-#: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:116
+#: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:123
 msgid "Data Received"
 msgstr "已接收"
 
-#: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:118
+#: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:125
 msgid "Data Transmitted"
-msgstr "已傳送"
+msgstr "已发送"
 
-#: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:108
+#: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:115
 msgid "Endpoint"
-msgstr "傳輸端點"
+msgstr "传输端点"
 
-#: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:99
+#: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:106
 msgid "Firewall Mark"
-msgstr "防火牆遮罩"
+msgstr "防火墙标识"
 
 #: applications/luci-app-wireguard/root/usr/share/rpcd/acl.d/luci-app-wireguard.json:3
 msgid "Grant access to LuCI app wireguard"
-msgstr ""
+msgstr "将权限授予 LuCI 应用 wireguard"
 
-#: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:114
+#: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:121
 msgid "Latest Handshake"
 msgstr "上次握手"
 
-#: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:97
+#: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:104
 msgid "Listen Port"
-msgstr "監聽連接埠"
+msgstr "监听端口"
 
 #: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:15
 msgid "Never"
 msgstr "永不"
 
-#: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:195
+#: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:214
+msgid "No WireGuard interfaces configured."
+msgstr "未配置 WireGuard 接口。"
+
+#: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:94
+msgid "No peer information available"
+msgstr "无对端信息可用"
+
+#: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:205
 msgid "Peers"
-msgstr ""
+msgstr "对端"
 
-#: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:112
+#: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:119
 msgid "Persistent Keepalive"
-msgstr "Keepalive 間隔（秒）"
+msgstr "Keepalive 间隔（秒）"
 
-#: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:95
-#: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:106
+#: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:102
+#: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:113
 msgid "Public Key"
-msgstr "公鑰"
+msgstr "公钥"
 
 #: applications/luci-app-wireguard/root/usr/share/luci/menu.d/luci-app-wireguard.json:3
 msgid "WireGuard"
-msgstr "WireGuard VPN"
+msgstr "WireGuard"
 
-#: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:170
+#: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:179
 msgid "WireGuard Status"
-msgstr "WireGuard 狀態"
-
-#: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:25
-msgid "h ago"
-msgstr "小時前"
-
-#: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:23
-msgid "m ago"
-msgstr "分鐘前"
+msgstr "WireGuard 状态"
 
 #: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:27
 msgid "over a day ago"
-msgstr "超過一天前"
-
-#: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:21
-msgid "s ago"
-msgstr "秒前"
-
-#~ msgid "Collecting data..."
-#~ msgstr "正在收集資料中…"
-
-#~ msgid "Configuration"
-#~ msgstr "組態"
-
-#~ msgid "Interface"
-#~ msgstr "介面"
-
-#~ msgid "Interface does not have a public key!"
-#~ msgstr "介面沒有配置公鑰！"
-
-#~ msgid "Peer"
-#~ msgstr "對端"
-
-#~ msgid "Show/Hide QR-Code"
-#~ msgstr "顯示/隱藏 QR 碼"
-
-#~ msgid ""
-#~ "The QR-Code works per wg interface, it will be refreshed with every "
-#~ "manual page reload and transfers the following information:"
-#~ msgstr ""
-#~ "QR二維碼在每個wg界面上均有效，每次重新加載手動頁面時都會刷新該QR二維碼，並"
-#~ "傳輸以下信息："
-
-#~ msgid "This section contains no values yet"
-#~ msgstr "這部分尚無數值"
-
-#~ msgid ""
-#~ "[Interface] A random, on the fly generated 'PrivateKey', the key will not "
-#~ "be saved on the router"
-#~ msgstr "[介面] 隨機動態生成的 'PrivateKey'，金鑰將不會保存在路由器上"
-
-#~ msgid ""
-#~ "[Peer] The 'PublicKey' of that wg interface and the 'AllowedIPs' with the "
-#~ "default of '0.0.0.0/0, ::/0' to allow sending traffic to any IPv4 and "
-#~ "IPv6 address"
-#~ msgstr ""
-#~ "[對等節點] 該wg接口的'PublicKey'和默認值為'0.0.0.0/0，:: / "
-#~ "0'的'AllowedIPs'，以允許將流量發送到任何IPv4和IPv6位址"
-
+msgstr "超过一天前"
